@@ -1,6 +1,6 @@
 # PHP Quarters Search Applications
 
-These PHP applications are designed to search for all occurrences and the first occurrence with minimum distance between quarters. The applications are developed by Ihor Leontiuk.
+These PHP applications are designed to search for all occurrences and the first occurrence with minimum distance between quarters. The main goal was to find the fastest algorithm. The applications are developed by Ihor Leontiuk.
 
 ## Scripts
 
@@ -15,14 +15,14 @@ These PHP applications are designed to search for all occurrences and the first 
 
 ## Functions
 
-- `execute(array $quarters)`: This function is the main entry point of the application. It takes an array of quarters as input and returns an array of results or an integer depending on the script. If the quarters array is empty, it throws an exception.
+- `execute(array $quarters)`: This function is the application's main entry point. It takes an array of quarters as input and returns an array of results or an integer depending on the script. If the quarters array is empty, it throws an exception.
 - `searchQuarterWithZeroDistance(int $numQuarters, array $properties, array $quarters)`: This function searches quarters with zero distance between quarters. It returns an array of results or an integer depending on the script.
 - `searchQuarterFromOneDistance(int $numQuarters, array $properties, array $quarters)`: This function searches quarters from one distance between quarters. It returns an array of results or an integer depending on the script.
 - `addExistenceFlag(array $properties, array &$quarters, int $currentQuarter, int $pointer)`: This function adds an existence flag to quarters if a new matching property is found.
 
 ## Usage
 
-To use these applications, you need to have PHP installed on your machine. You can run the applications by using the PHP CLI (Command Line Interface) and passing the script file name:
+To use these applications, you must install PHP on your machine. You can run the applications by using the PHP CLI (Command Line Interface) and passing the script file name:
 
 ```bash
 php SearchAllMinDistances.php
